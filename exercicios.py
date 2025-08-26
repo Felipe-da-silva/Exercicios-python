@@ -260,7 +260,7 @@ print("Insira 5 números")
 
 # Pede 5 números ao usuário
 for i in range(5):
-    numero.append(input("Digite número: ")) # Adiciona cada número à lista
+    numero.append(int(input("Digite número: "))) # Adiciona cada número à lista
     
     maior = max(numero) # Usa max() para achar o maior valor.
     menor = min(numero) # Usa min() para achar o menor valor.
@@ -426,3 +426,4 @@ print("========================================================\n")
 print(f"Cálculo: {num1}{operacao}{num2}")
 
 print("Resultado:", resultado)
+
