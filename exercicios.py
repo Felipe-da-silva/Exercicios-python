@@ -186,7 +186,7 @@ for i in range(1, n + 1):
 #10. Solicite um número e mostre a soma de todos os números pares até ele.
 
 print("\n----------------- Exercicio 10 ----------------------\n")
-print("Descubra quais as sequências dos números pares até o número digitado:\n")
+print("Descubra a sequência dos números pares até o número digitado:\n")
 
 # Variável que vai guardar a soma dos números pares
 soma = 0
@@ -194,15 +194,13 @@ soma = 0
 # Pede ao usuário para digitar um número inteiro
 n = int(input("Digite um número: "))
 
-'''
-Percorre todos os números pares de 2 até n
-O último '2' no range significa que vai de 2 em 2
-'''
+print("\nSequência dos números pares até", n, ":")
 for i in range(2, n+1, 2):
-    soma += i  # Adiciona o número atual à soma
+    print(i, end=" ")  # mostra cada número par na mesma linha
+    soma += i
 
-# Mostra o último número par percorrido
-print(i)
+# Pula uma linha após a sequência
+print("\n")
 
 # Mostra o resultado final da soma de todos os números pares
 print("A soma dos pares é:", soma)
@@ -426,4 +424,5 @@ else:
 # Mostra a operação e o resultado.
 print("========================================================\n")
 print(f"Cálculo: {num1}{operacao}{num2}")
+
 print("Resultado:", resultado)
