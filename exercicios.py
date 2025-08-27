@@ -331,29 +331,24 @@ for i in range(n1, n2 + 1):
 #17.Crie uma função que receba um número e retorne se ele é primo.
 
 print("\n----------------- Exercicio 17 ----------------------\n")
-print("Insira um número e saiba se ele é um número primo:\n")
-
+print("Insira um número e descubra se ele é um número primo:")
 # Pede um número ao usuário
 num = int(input("Digite um número: "))
 
-# Começa assumindo que o número é primo
-primo = True
-
-# Números menores ou iguais a 1 não são primos
-if num <= 1:
-    primo = False
-else:
+# Verifica apenas se o número é maior que 1 (pois 0 e 1 não são primos)
+if num > 1:
     # Testa se o número tem algum divisor além de 1 e dele mesmo
     for i in range(2, num):
-        if num % i == 0:
-            primo = False
-            break  # não precisa continuar testando
-
-# Mostra o resultado
-if primo == True:
-    print(num, "é primo")
+        if num % i == 0:          # Se for divisível por 'i'
+            print(num, "não é primo")
+            break                 # Sai do laço, pois já não é primo
+    else:
+        # O 'else' do 'for' só executa se o laço NÃO foi interrompido pelo 'break'
+        print(num, "é primo")
 else:
+    # Caso o número seja menor ou igual a 1
     print(num, "não é primo")
+
 
 
 #  -------------------- Exercicio 18 --------------------------
@@ -426,4 +421,5 @@ print("========================================================\n")
 print(f"Cálculo: {num1}{operacao}{num2}")
 
 print("Resultado:", resultado)
+
 
