@@ -1,3 +1,6 @@
+# Aluno: Felipe Figueiredo da Silva.
+# Avaliação Parcial 1
+
 #  -------------------- Exercicio 1 --------------------------
 
 #1. Crie um programa que peça o nome do usuário e imprima uma saudação personalizada.
@@ -421,5 +424,6 @@ print("========================================================\n")
 print(f"Cálculo: {num1}{operacao}{num2}")
 
 print("Resultado:", resultado)
+
 
 
